@@ -1,0 +1,26 @@
+.App{
+  margin-left: 1vw;
+}
+
+/* APP FORM */
+.app-form{
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.app-form > * {
+  margin-top: 1vh;
+}
+.app-form-input {
+  height: 3vh;
+}
+.app-form-antd-form-item > div >div > label {
+  /* background-color: aqua; */
+  width: 100%
+}
+
+
+
+
+
