@@ -20,6 +20,14 @@
   width: 100%
 }
 
+.form-multi-steps {
+  margin-bottom: 20px;
+}
+.form-field-error{
+  font-size: 10px;
+  color: red;
+}
+
 
 
 

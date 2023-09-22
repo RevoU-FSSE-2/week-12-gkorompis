@@ -1,16 +1,31 @@
 
 import './App.css';
-import { FormStep1, FormStep2, FormStep3 } from './containers';
+import { useState } from 'react';
+import {  MultiStepForm, RegistrationDetails } from './components';
+
+interface FormValues {
+    fullname: string,
+    email: string,
+    dob: Date | "",
+    streetAddress: string,
+    city: string,
+    state: string,
+    zip: string,
+    username: string,
+    password: string
+}
 
 function App() {
+
+  let [formValues, setFormValues] = useState<FormValues>({} as FormValues);
+
   return (
     <div className="App">
-        <h1>Help</h1>
-        <FormStep1/>
-        <FormStep2/>
-        <FormStep3/>
+        <MultiStepForm handlerFormValues={setFormValues}/>
+        <RegistrationDetails formValues={formValues}/>
     </div>
-  );
+
+)
 }
 
 export default App;
